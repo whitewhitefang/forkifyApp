@@ -17,7 +17,10 @@ export const ajax = async function(url, uploadData = undefined) {
       },
       body: JSON.stringify(uploadData)
     }) : fetch(url, {
-      method: "GET"
+      method: "GET",
+      headers: {
+        'Content-Type': "application/json"      
+      },
     });   
     const request = await Promise.race([
       fetchPro,

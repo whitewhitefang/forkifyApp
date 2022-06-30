@@ -24,7 +24,6 @@
 
 .btn {
   @extend %btn;
-
   padding: 1.5rem 4rem;
   font-size: 1.5rem;
   font-weight: 600;
@@ -98,7 +97,6 @@
   width: 4.5rem;
   // margin-left: auto;
   transition: all 0.2s;
-
   display: flex;
   align-items: center;
   justify-content: center;

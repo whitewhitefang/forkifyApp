@@ -3,7 +3,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100rem;
+  width: 100rem;  
   background-color: white;
   border-radius: 9px;
 
@@ -49,7 +49,7 @@
 
   &__column {
     display: grid;
-    grid-template-columns: 1fr 2.8fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 1.5rem;
 
@@ -89,6 +89,7 @@
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 1rem;
+    margin-top: auto;
     grid-column: 1/-1;
   }
 
@@ -96,4 +97,48 @@
     grid-column: 1 / -1;
     justify-self: center;
   }
+}
+
+.upload__column.upload-ingredients {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+div[class*="upload__exact-ingredient--"] {
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+  border: 1px solid $color-primary;
+  border-radius: 0.5rem;
+  padding: 1rem;     
+}
+
+.ingredient--inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+div.ingredients_buttons {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-left: 10px;
+  & .btn__add-product, .btn__delete-product {
+    display: block;    
+  }
+  & .btn__add-product {
+    margin-top: 0;
+    margin-bottom: 18px;
+  }
+}
+
+.exact-ingredient__quantityAndUnit {
+  margin-top: 4px;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  align-items: center;
 }
