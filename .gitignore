@@ -1,6 +1,6 @@
 # ignore directories
 .parcel-cache/
-.node_modules/
-.dist/
+node_modules/
+dist/
 # ignore files
-.prettierrc
+prettierrc

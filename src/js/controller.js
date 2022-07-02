@@ -89,6 +89,9 @@ const controlUploadRecipe = async function(data) {
   } catch(err) {    
     console.error(err);   
     addRecipeView.renderError(err.message);
+    setTimeout(function() {
+      window.location.reload();      
+    }, MODAL_CLOSE_MILSECS);    
   }  
 }
 
