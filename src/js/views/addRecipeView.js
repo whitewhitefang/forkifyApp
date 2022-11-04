@@ -19,6 +19,7 @@ class AddRecipeView extends View {
         document.body.style.overflow = "auto";        
       } else {
         document.body.style.overflow = "hidden";
+        document.body.style.zIndex = "-100";
       }
   }
   _addHandlerShowWindow() {

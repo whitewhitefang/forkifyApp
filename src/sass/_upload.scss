@@ -3,7 +3,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100rem;  
+  max-width: 120rem;  
   background-color: white;
   border-radius: 9px;
 
@@ -107,6 +107,7 @@
 
 div[class*="upload__exact-ingredient--"] {
   display: grid;
+  display: -moz-grid;
   grid-template-columns: 1fr 0.3fr;
   border: 1px solid $color-primary;
   border-radius: 0.5rem;
