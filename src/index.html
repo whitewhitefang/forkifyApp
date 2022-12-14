@@ -2,33 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta 
-      name="viewport" 
-      content="width=device-width, initial-scale=1.0" 
-    />
-    <meta 
-      http-equiv="X-UA-Compatible" 
-      content="ie=edge" 
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700"
       rel="stylesheet"
     />
-    <link 
-      rel="shortcut icon" 
-      href="./img/favicon.png" 
-      type="image/x-icon" 
-    />
-    <link 
-      rel="stylesheet" 
-      href="./sass/main.scss" 
-    />
-    <script 
-      defer 
-      type="module"
-      src="./js/controller.js"
-    >
-    </script>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./sass/main.scss" />
+    <script defer type="module" src="./js/controller.js"></script>
 
     <title>forkify // Search over 1,000,000 recipes</title>
   </head>
@@ -36,12 +18,8 @@
   <body>
     <div class="container">
       <header class="header">
-        <a href="/">        
-          <img 
-            src="./img/logo.png" 
-            alt="Logo" 
-            class="header__logo" 
-          />
+        <a href="/">
+          <img src="./img/logo.png" alt="Logo" class="header__logo" />
         </a>
         <form class="search">
           <input
@@ -86,7 +64,7 @@
                     <p>
                       No bookmarks yet. Find a nice recipe and bookmark it :)
                     </p>
-                  </div>                  
+                  </div>
                 </ul>
               </div>
             </li>
@@ -105,10 +83,8 @@
                         <use href="./img/icons.svg#icon-alert-triangle"></use>
                       </svg>
                     </div>
-                    <p>
-                      There no products were added yet
-                    </p>
-                  </div>   
+                    <p>There no products were added yet</p>
+                  </div>
                 </ul>
               </div>
             </li>
@@ -122,32 +98,49 @@
             <p>sort</p>
             <div class="sorting__inputs">
               <div>
-                <input class="sorting_button" type="radio" name="sort" id="none" value="none" />
+                <input
+                  class="sorting_button"
+                  type="radio"
+                  name="sort"
+                  id="none"
+                  value="none"
+                />
                 <label for="none">none</label>
               </div>
               <div>
-                <input class="sorting_button" type="radio" name="sort" id="name" value="name" />
+                <input
+                  class="sorting_button"
+                  type="radio"
+                  name="sort"
+                  id="name"
+                  value="name"
+                />
                 <label for="name">by name</label>
-              </div>              
+              </div>
               <div>
-                <input class="sorting_button" type="radio" name="sort" id="time" value="time" />
+                <input
+                  class="sorting_button"
+                  type="radio"
+                  name="sort"
+                  id="time"
+                  value="time"
+                />
                 <label for="time">by cooking time</label>
               </div>
             </div>
           </form>
-        </div>        
+        </div>
         <div class="pagination"></div>
         <ul class="results"></ul>
 
         <p class="copyright">
-          &copy; Copyright by
+          &copy; Study project of
           <a
             class="twitter-link"
             target="_blank"
             href="https://twitter.com/jonasschmedtman"
             >Jonas Schmedtmann</a
-          >. Use for learning or your portfolio. Don't use to teach. Don't claim
-          as your own.
+          >' course.
         </p>
       </div>
 
@@ -159,9 +152,8 @@
             </svg>
           </div>
           <p>Start by searching for a recipe or an ingredient.</p>
-        </div> 
+        </div>
       </div>
-
     </div>
 
     <div class="overlay hidden"></div>
@@ -171,53 +163,28 @@
         <div class="upload__column">
           <h3 class="upload__heading">Recipe data</h3>
           <label>Title</label>
-          <input 
-            value=""             
-            name="title" 
-            type="text" 
-            required
-          />
+          <input value="" name="title" type="text" required />
           <label>URL</label>
-          <input 
-            value="" 
-            name="sourceUrl" 
-            type="text" 
-          />
+          <input value="" name="sourceUrl" type="text" />
           <label>Image URL</label>
-          <input 
-            value=""             
-            name="image" 
-            type="text" 
-            required
-          />
+          <input value="" name="image" type="text" required />
           <label>Publisher</label>
-          <input 
-            value="" 
-            name="publisher" 
-            type="text" 
+          <input
+            value=""
+            name="publisher"
+            type="text"
             placeholder="4 chars minimum"
             required
           />
           <label>Prep time</label>
-          <input 
-            value=""             
-            name="cookingTime" 
-            type="number" 
-            required
-          />
+          <input value="" name="cookingTime" type="number" required />
           <label>Servings</label>
-          <input 
-            value="4"              
-            name="servings" 
-            type="number" 
-            min="1"
-            max="20"
-          />
+          <input value="4" name="servings" type="number" min="1" max="20" />
         </div>
         <div>
           <h3 class="upload__heading">Ingredients</h3>
           <div class="upload__column upload-ingredients"></div>
-        </div>        
+        </div>
         <button class="btn upload__btn">
           <svg>
             <use href="./img/icons.svg#icon-upload-cloud"></use>
